@@ -2,10 +2,7 @@
 #include "Session.h"
 #include "ApplicationDescriptor.h"
 #include "Group.h"
-<<<<<<< Updated upstream
-=======
 #include "Privilege.h"
->>>>>>> Stashed changes
 inline void RegisterGroup(Session* session, Group* group, bool isAllowed = false) {
 	if (isAllowed) session->allowedGroups |= 1 << session->index;	
 	session->registeredGroups[session->index++] = *group;
