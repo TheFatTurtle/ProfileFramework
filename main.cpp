@@ -3,16 +3,11 @@
 #include <stdlib.h>
 const char* dataPath = "./";
 Session* currentSession;
-<<<<<<< Updated upstream
-=======
 char* StringOne = "test.app.com";
->>>>>>> Stashed changes
 int main(int, char**) {
     Session* currentSession = new Session();
     AddDefault(currentSession);
     ApplicationDescriptor *app = new ApplicationDescriptor();
-<<<<<<< Updated upstream
-=======
     app->name = "test.app.com";
     app->groupFlags = 2;
     makeStartable(app);
@@ -28,6 +23,6 @@ int main(int, char**) {
         canStartElevated = isAllowed(currentSession, app);
     }
     bool canStartAfter = isAllowed(currentSession, app);
->>>>>>> Stashed changes
+    ReadFromFile("Todo");
     return true;
 }
